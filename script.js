@@ -42,4 +42,6 @@ function closeDragElement() {
     document.onmousemove = null;
 }
 }*/
-$("#Nav").draggable()
+$(function () {
+    $("#Nav").draggable()
+})
