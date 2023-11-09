@@ -13,8 +13,8 @@ if (document.getElementById(elmnt.id + "header")) {
 }
 
 function dragMouseDown(e) {
-    e = e || window.event;
-    e.preventDefault();
+    e = e || window.e;
+    e.preDefault();
     // get the mouse cursor position at startup:
     pos3 = e.clientX;
     pos4 = e.clientY;
@@ -24,8 +24,8 @@ function dragMouseDown(e) {
 }
 
 function elementDrag(e) {
-    e = e || window.event;
-    e.preventDefault();
+    e = e || window.e;
+    e.preDefault();
     // calculate the new cursor position:
     pos1 = pos3 - e.clientX;
     pos2 = pos4 - e.clientY;
