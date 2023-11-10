@@ -7,32 +7,16 @@
         <script src="script.js"></script>
         <link href="style.css" type="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">  
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>  
+        <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>  
+        <script>
+            $(function() {  
+                $( "#Nav" ).draggable();  
+            });
+        </script>
     </head>
     <body style="text-align: -webkit-center;">
-        <div style="position: absolute; top: 1px; left: 25%; width: auto; height: auto;">
-            <p>
-                I've sadly had to unpublish the <a src="https://github.com/Timothy-P/Paint.github.io">Painter</a> site, but you can still download the project.<br>
-                I would like to make a site with no external help (aka, WordPress or Google Forms) but I will resort to it.
-            </p>
-        </div>
-        <h1>
-            Welcome
-        </h1>
-        <p>
-            It seems you have found my page, which is great!<br>
-            I create a lot of <abbr title="Hyper Text Markup Language">HTML</abbr> (generally font end work) projects with some <abbr title="JavaScript">JS</abbr>.<br>
-            I sadly can't have a site for each project up for whenever, but I can have this replace my Google Sites page.
-        </p>
-        <div id="Nav" style="position: absolute; left: 10px; border-color: burlywood;">
-            <h1>
-                Nav
-            </h1>
-            <button onclick="window.open('https:\/\/github.com/Timothy-P/Paint.github.io/archive/refs/heads/main.zip', '_new')">Painter</button><br>
-            <button onclick="window.open('https:\/\/github.com/Timothy-P/jQ-Calculator/archive/refs/heads/main.zip'), '_new'">jQuery Calculator</button><br>
-            <button onclick="window.open('https:\/\/github.com/Timothy-P/Portfolio/archive/refs/heads/main.zip', '_new')">Portfolio</button><br>
-            <button onclick="window.open('https:\/\/github.com/Timothy-P/FractionsCalculator/archive/refs/heads/main.zip', '_new')"></button><br>
-            <button onclick="window.open('About this.html')">About this</button><br>
-            <button onclick="window.open('Contributers.html')">Contributers</button>
-        </div>
+        <div id="Nav" style="cursor: move;position: relative;width: 200px;height: 200px; background-color: coral;" id="Nav"></div>
     </body>
 </html>
