@@ -1,17 +1,25 @@
 var NavLock = 0
 var NavA = 0
 var InternetC = 0
+var Placeholder = "This isn\'t finished yet.\nCome back later!"
 function Alpha() {
     if (NavA == 0) {
         $("body").append('<div style="position: relative;width: 200px;height: 200px; background-color: coral;opacity:1" id="Nav">')
         $("#Nav").append('<div style="width: auto; height: 15px; background-color: blue;cursor: move;padding:12px;" id="TNav"></div>')
-        $("#Nav").append('<button onclick="alert(\'Test complete\')">Test Button</button>')
         $("#TNav").append('<button style="position:relative;left:65%;cursor:auto;background:transparent;border:none;font-size:1.8em;top:-90%;" id="LockB" onclick="AlphaL()">&#128275;</button>')
         $("#TNav").append('<button style="position:relative;left:56%;cursor:auto;background:transparent;border:none;top:-8px" onclick="AlphaC()"><img style="width:30px;" alt="Close" src="XpClose.png"></button>')
         $(function() {  
             $("#Nav").draggable();  
         });
         NavA = 1
+
+        $("#Nav").append('<button onclick=\'alert(Placeholder)\'>Painter</button>');
+        $("#Nav").append('<button onclick=\'alert(Placeholder)\'>jQ-Calculator</button>');
+        $("#Nav").append('<button onclick=\'alert(Placeholder)\'>9th-Classes</button>');
+        $("#Nav").append('<button onclick=\'alert(Placeholder)\'>Fractions-Calculator</button>');
+        $("#Nav").append('<button onclick=\'alert(Placeholder)\'>jQuery-Testing</button>');
+        $("#Nav").append('<button onclick=\'alert(Placeholder)\'></button>');
+        $("#Nav").append('<button onclick=\'alert(Placeholder)\'></button>');
     }
     else {
         alert("Menu is open.")
