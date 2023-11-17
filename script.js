@@ -1,3 +1,20 @@
+/*
+Copyright 2023 Timothy-P
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+*/
+
+
 var NavLock = 0
 var NavA = 0
 var InternetC = 0
@@ -175,7 +192,6 @@ function jQTesting() {
 
 // New section
 function About() {
-    //alert("This isn\'t quite finished.\nTry coming back later.")
     if (NavA == 0) {
         $("body").append('<div style="position: relative;width: 1000px;height: 300px; background-color: coral;opacity:1" id="Nav">')
         $("#Nav").append('<div style="width: auto; height: 15px; background-color: blue;cursor: move;padding:12px;" id="TNav"></div>')
@@ -186,7 +202,7 @@ function About() {
         });
         NavA = 1
 
-        $("#Nav").append('<button onclick="ReadMe()"><img style="width:38px" alt="Folder image" src="Folder.png"></button>')
+        $("#Nav").append('<button style="background:transparent;border:transparent" onclick="ReadMe()"><img style="width:70px" alt="Folder image" src="Folder.png"></button>')
         $("#Nav").append('<p>ReadMe.txt</p>')
     }
     else {
@@ -200,8 +216,8 @@ function ReadMe() {
 
     $("body").append('<div style="top:'+MenuX+';left:'+MenuY+';position: relative;width: 500px;height: 200px; background-color: white;opacity:1" id="Nav">')
     $("#Nav").append('<div style="width: auto; height: 15px; background-color: blue;cursor: move;padding:12px;" id="TNav"></div>')
-    $("#TNav").append('<button style="position:relative;left:57%;cursor:auto;background:transparent;border:none;font-size:1.8em;top:-90%;" id="LockB" onclick="AlphaL()">&#128275;</button>')
-    $("#TNav").append('<button style="position:relative;left:52%;cursor:auto;background:transparent;border:none;top:-8px" onclick="AlphaC()"><img style="width:30px;" alt="Close" src="XpClose.png"></button>')
+    $("#TNav").append('<button style="position:relative;left:86%;cursor:auto;background:transparent;border:none;font-size:1.8em;top:-90%;" id="LockB" onclick="AlphaL()">&#128275;</button>')
+    $("#TNav").append('<button style="position:relative;left:83.5%;cursor:auto;background:transparent;border:none;top:-8px" onclick="AlphaC()"><img style="width:30px;" alt="Close" src="XpClose.png"></button>')
     $(function() {  
         $("#Nav").draggable();  
     });
