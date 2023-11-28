@@ -222,5 +222,5 @@ function ReadMe() {
         $("#Nav").draggable();  
     });
     
-    $("#Nav").append('<code><p>Hello! You\'ve come this far to see what I\'m up to, and now you get to read this. My dream was to become this world-wide programmer that\'s always busy, but I don\'t mind what I\'ve got now. I just think I might be a little out of my league with what I originally wanted to do (Windows XP theme).')
+    $("#Nav").append('<code><p>Hello! You\'ve come this far to see what I\'m up to, and now you get to read this. My dream was to become this world-wide programmer that\'s always busy, but I don\'t mind what I\'ve got now. I just think I might be a little out of my league with what I originally wanted to do (Windows XP theme).</p></code>')
 }
