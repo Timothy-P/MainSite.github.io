@@ -202,8 +202,10 @@ function About() {
         });
         NavA = 1
 
-        $("#Nav").append('<button style="background:transparent;border:transparent" onclick="ReadMe()"><img style="width:70px" alt="Folder image" src="Folder.png"></button>')
-        $("#Nav").append('<p>ReadMe.txt</p>')
+        $("#Nav").append('<button style="background:transparent;border:transparent;font-size: 4em;position: relative;left: 0.5%;" onclick="ReadMe()">&#128462;</button>')
+        $("#Nav").append('<p style="position:relative;top:-15%;">ReadMe.txt</p>')
+        $("#Nav").append('<button style="background:transparent;border:transparent;position: relative;top: -51%;left: 10%;" onclick="Sponsor()">&#128193;</button>')
+        $("#Nav").append('<p style="position:relative;top:-57.5%;left:11.2%;">Sponsor</p>')
     }
     else {
         alert("Menu is open.")
@@ -223,4 +225,35 @@ function ReadMe() {
     });
     
     $("#Nav").append('<code><p>Hello! You\'ve come this far to see what I\'m up to, and now you get to read this. My dream was to become this world-wide programmer that\'s always busy, but I don\'t mind what I\'ve got now. I just think I might be a little out of my league with what I originally wanted to do (Windows XP theme).</p></code>')
+}
+function Sponsor() {
+    let MenuX = document.getElementById("Nav").style.top
+    let MenuY = document.getElementById("Nav").style.left
+    document.getElementById("Nav").remove()
+
+    $("body").append('<div style="top:'+MenuX+';left:'+MenuY+';position: relative;width: 500px;height: 200px; background-color: coral;opacity:1" id="Nav">')
+    $("#Nav").append('<div style="width: auto; height: 15px; background-color: blue;cursor: move;padding:12px;" id="TNav"></div>')
+    $("#TNav").append('<button style="position:relative;left:86%;cursor:auto;background:transparent;border:none;font-size:1.8em;top:-90%;" id="LockB" onclick="AlphaL()">&#128275;</button>')
+    $("#TNav").append('<button style="position:relative;left:83.5%;cursor:auto;background:transparent;border:none;top:-8px" onclick="AlphaC()"><img style="width:30px;" alt="Close" src="XpClose.png"></button>')
+    $(function() {  
+        $("#Nav").draggable();  
+    });
+
+    $("#Nav").append('<button style="font-size: 4em;border: transparent;background: transparent;position: relative;left: 2%;" onclick="Details()">&#128462;</button>')
+    $("#Nav").append('<p style="position: relative;top: -23%;left: 1%;">Details.txt</p>')
+}
+function Details() {
+    let MenuX = document.getElementById("Nav").style.top
+    let MenuY = document.getElementById("Nav").style.left
+    document.getElementById("Nav").remove()
+
+    $("body").append('<div style="top:'+MenuX+';left:'+MenuY+';position: relative;width: 500px;height: 200px; background-color: white;opacity:1" id="Nav">')
+    $("#Nav").append('<div style="width: auto; height: 15px; background-color: blue;cursor: move;padding:12px;" id="TNav"></div>')
+    $("#TNav").append('<button style="position:relative;left:86%;cursor:auto;background:transparent;border:none;font-size:1.8em;top:-90%;" id="LockB" onclick="AlphaL()">&#128275;</button>')
+    $("#TNav").append('<button style="position:relative;left:83.5%;cursor:auto;background:transparent;border:none;top:-8px" onclick="AlphaC()"><img style="width:30px;" alt="Close" src="XpClose.png"></button>')
+    $(function() {  
+        $("#Nav").draggable();  
+    });
+
+    $("#Nav").append('<code><p>I\'m unfortunately going to have to start removing updates and giving them to people who decide to pay, so I\'m getting a bit of help from those who are curious/wanting to give me a little bit of money. I don\'t have the entire GitHub Sponsors page setup yet, but when I do, the button to open my sponsor page will work. (Or be put in. I don\'t think I have put it in yet.)</p></code>')
 }
