@@ -204,8 +204,10 @@ function About() {
 
         $("#Nav").append('<button style="background:transparent;border:transparent;font-size: 4em;position: relative;left: 0.5%;" onclick="ReadMe()">&#128462;</button>')
         $("#Nav").append('<p style="position:relative;top:-15%;">ReadMe.txt</p>')
-        $("#Nav").append('<button style="background:transparent;border:transparent;position: relative;top: -51%;left: 10%;" onclick="Sponsor()">&#128193;</button>')
-        $("#Nav").append('<p style="position:relative;top:-57.5%;left:11.2%;">Sponsor</p>')
+        $("#Nav").append('<button style="background:transparent;border:transparent;position: relative;top: -51%;left: 10%;font-size:4em;" onclick="Sponsor()">&#128193;</button>')
+        $("#Nav").append('<p style="position:relative;top:-57.5%;left:11.5%;">Sponsor</p>')
+        $("#Nav").append('<button style="background:transparent;border:transparent;position: relative;top: -94%;left: 20%;font-size:4em;" onclick="Idea()">&#128193;</button>')
+        $("#Nav").append('<p style="position:relative;top:-100%;left:22.4%;">Ideas</p>')
     }
     else {
         alert("Menu is open.")
@@ -256,4 +258,19 @@ function Details() {
     });
 
     $("#Nav").append('<code><p>I\'m unfortunately going to have to start removing updates and giving them to people who decide to pay, so I\'m getting a bit of help from those who are curious/wanting to give me a little bit of money. I don\'t have the entire GitHub Sponsors page setup yet, but when I do, the button to open my sponsor page will work. (Or be put in. I don\'t think I have put it in yet.)</p></code>')
+}
+function Idea() {
+    let MenuX = document.getElementById("Nav").style.top
+    let MenuY = document.getElementById("Nav").style.left
+    document.getElementById("Nav").remove()
+
+    $("body").append('<div style="top:'+MenuX+';left:'+MenuY+';position: relative;width: 500px;height: 200px; background-color: white;opacity:1" id="Nav">')
+    $("#Nav").append('<div style="width: auto; height: 15px; background-color: blue;cursor: move;padding:12px;" id="TNav"></div>')
+    $("#TNav").append('<button style="position:relative;left:86%;cursor:auto;background:transparent;border:none;font-size:1.8em;top:-90%;" id="LockB" onclick="AlphaL()">&#128275;</button>')
+    $("#TNav").append('<button style="position:relative;left:83.5%;cursor:auto;background:transparent;border:none;top:-8px" onclick="AlphaC()"><img style="width:30px;" alt="Close" src="XpClose.png"></button>')
+    $(function() {  
+        $("#Nav").draggable();  
+    });
+
+    $("#Nav").append('<code><p>I think I make another calculator (I know, so interesting) in the near future that doesn\'t use any outside sources for the equation parts of it. If you do want to see that, stick around. I might have some other ideas coming soon!</p></code>')
 }
