@@ -44,6 +44,9 @@ function Alpha() {
 
         $("#Nav").append('<button style="background: transparent;border: transparent;cursor: pointer;position: relative;top: -169.4%;left: 39%;" onclick=\'jQTesting()\'><img style="width: 70px;" alt="Folder image" src="Folder.png"></button>');
         $("#Nav").append('<p style="width:200px;position: relative;left: 38%;top: -176%;">jQuery-Testing</p>')
+        
+        $("#Nav").append('<button style="background: transparent;border: transparent;cursor: pointer;position: relative;top: -211.9%;left: 51%;" onclick=\'IndependentCalc()\'><img style="width: 70px;" alt="Folder image" src="Folder.png"></button>');
+        $("#Nav").append('<p style="width:200px;position: relative;left: 52%;top: -218%;">Ind-Calc</p>')
     }
     else {
         alert("Menu is open.")
@@ -186,6 +189,22 @@ function jQTesting() {
     $("#Nav").append('<a href="https://github.com/Timothy-P/jQuery-Testing/archive/refs/heads/main.zip"><img style="width:100px;position:relative;left:24%;top:5%;" alt="ZIP image" src="ZIP.png"></a>')
     $("#Nav").append('<p style="position:relative;left:10%;" onclick="https://github.com/Timothy-P/jQuery-Testing/archive/refs/heads/main.zip">jQuery-Testing-main.zip</p>')
 }
+function IndependentCalc() {
+    let MenuX = document.getElementById("Nav").style.top
+    let MenuY = document.getElementById("Nav").style.left
+    document.getElementById("Nav").remove()
+
+    $("body").append('<div style="top:'+MenuX+';left:'+MenuY+';position: relative;width: 200px;height: 200px; background-color: coral;opacity:1" id="Nav">')
+    $("#Nav").append('<div style="width: auto; height: 15px; background-color: blue;cursor: move;padding:12px;" id="TNav"></div>')
+    $("#TNav").append('<button style="position:relative;left:57%;cursor:auto;background:transparent;border:none;font-size:1.8em;top:-90%;" id="LockB" onclick="AlphaL()">&#128275;</button>')
+    $("#TNav").append('<button style="position:relative;left:52%;cursor:auto;background:transparent;border:none;top:-8px" onclick="AlphaC()"><img style="width:30px;" alt="Close" src="XpClose.png"></button>')
+    $(function() {  
+        $("#Nav").draggable();  
+    });
+    
+    $("#Nav").append('<a href="https://github.com/Timothy-P/Independent-Calc.git"><img style="width:100px;position:relative;left:24%;top:5%;" alt="ZIP image" src="ZIP.png"></a>')
+    $("#Nav").append('<p style="position:relative;left:10%;" onclick="https://github.com/Timothy-P/Independent-Calc.git">Independent-Calc-main<br>.zip</p>')
+}
 
 
 
@@ -272,5 +291,5 @@ function Idea() {
         $("#Nav").draggable();  
     });
 
-    $("#Nav").append('<code><p>I think I make another calculator (I know, so interesting) in the near future that doesn\'t use any outside sources for the equation parts of it. If you do want to see that, stick around. I might have some other ideas coming soon!</p></code>')
+    $("#Nav").append('<code><p>I\'ve made some good work on the project. Right now, I have a few more features to add, but other than that, it\'s finished. :D</p></code>')
 }
