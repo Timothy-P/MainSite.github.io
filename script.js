@@ -203,7 +203,7 @@ function IndependentCalc() {
     });
     
     $("#Nav").append('<a href="https://github.com/Timothy-P/Independent-Calc.git"><img style="width:100px;position:relative;left:24%;top:5%;" alt="ZIP image" src="ZIP.png"></a>')
-    $("#Nav").append('<p style="position:relative;left:10%;" onclick="https://github.com/Timothy-P/Independent-Calc.git">Independent-Calc-main<br>.zip</p>')
+    $("#Nav").append('<p style="position:relative;left:10%;" onclick="https://github.com/Timothy-P/Independent-Calc/archive/refs/heads/main.zip">Independent-Calc-main<br>.zip</p>')
 }
 
 
@@ -291,5 +291,5 @@ function Idea() {
         $("#Nav").draggable();  
     });
 
-    $("#Nav").append('<code><p>I\'ve made some good work on the project. Right now, I have a few more features to add, but other than that, it\'s finished. :D</p></code>')
+    $("#Nav").append('<code><p>I\'m making good progress, and I\'ll include a secret: Type "Tools("Aver")" in your console for a beta feature. Of course, you\'ll need to get the latest update, but thought to let you guys enjoy a freebe (is that spelled right?).</p></code>')
 }
