@@ -291,5 +291,5 @@ function Idea() {
         $("#Nav").draggable();  
     });
 
-    $("#Nav").append('<code><p>I\'m making good progress, and I\'ll include a secret: Type "Tools("Aver")" in your console for a beta feature. Of course, you\'ll need to get the latest update, but thought to let you guys enjoy a freebe (is that spelled right?).</p></code>')
+    $("#Nav").append('<code><p>As I\'ve learned from some amazing person, you don\'t need jQuery as modern browsers have made their own ways of doing moveable elements and such. I\'ve just been living in the past, and with my new project, I\'ll no longer be using jQuery.</p></code>')
 }
